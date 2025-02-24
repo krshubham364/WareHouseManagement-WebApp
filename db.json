@@ -1,0 +1,228 @@
+{
+  "brands": [
+    {
+      "id": "1",
+      "name": "H&M"
+    },
+    {
+      "id": "2",
+      "name": "Flying Machine"
+    },
+    {
+      "id": "3",
+      "name": "Levi's"
+    },
+    {
+      "id": "4",
+      "name": "Zara"
+    },
+    {
+      "id": "5",
+      "name": "Gucci"
+    },
+    {
+      "id": "6",
+      "name": "Puma"
+    },
+    {
+      "id": "7",
+      "name": "Nike"
+    },
+    {
+      "id": "8",
+      "name": "Adidas"
+    },
+    {
+      "id": "9",
+      "name": "Tommy Hilfiger"
+    },
+    {
+      "id": "10",
+      "name": "Calvin Klein"
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "name": "Kurta",
+      "details": "Cotton kurta for men",
+      "brandId": "1",
+      "purchasePrice": 800,
+      "salePrice": 1000,
+      "availableQuantity": 50
+    },
+    {
+      "id": "p2",
+      "name": "Saree",
+      "details": "Silk saree for women",
+      "brandId": "2",
+      "purchasePrice": 1200,
+      "salePrice": 1500,
+      "availableQuantity": 30
+    },
+    {
+      "id": "p3",
+      "name": "Jeans",
+      "details": "Slim fit jeans for men",
+      "brandId": "3",
+      "purchasePrice": 1000,
+      "salePrice": 1300,
+      "availableQuantity": 40
+    },
+    {
+      "id": "p4",
+      "name": "Shirt",
+      "details": "Formal shirt for men",
+      "brandId": "4",
+      "purchasePrice": 900,
+      "salePrice": 1100,
+      "availableQuantity": 35
+    },
+    {
+      "id": "p5",
+      "name": "T-Shirt",
+      "details": "Cotton t-shirt for men",
+      "brandId": "5",
+      "purchasePrice": 500,
+      "salePrice": 700,
+      "availableQuantity": 60
+    },
+    {
+      "id": "p6",
+      "name": "Pant",
+      "details": "Formal pant for men",
+      "brandId": "6",
+      "purchasePrice": 1100,
+      "salePrice": 1400,
+      "availableQuantity": 25
+    },
+    {
+      "id": "p7",
+      "name": "Jacket",
+      "details": "Leather jacket for men",
+      "brandId": "7",
+      "purchasePrice": 2000,
+      "salePrice": 2500,
+      "availableQuantity": 20
+    },
+    {
+      "id": "p8",
+      "name": "Skirt",
+      "details": "Denim skirt for women",
+      "brandId": "8",
+      "purchasePrice": 700,
+      "salePrice": 900,
+      "availableQuantity": 30
+    },
+    {
+      "id": "p9",
+      "name": "Sweater",
+      "details": "Woolen sweater for men",
+      "brandId": "9",
+      "purchasePrice": 1500,
+      "salePrice": 1800,
+      "availableQuantity": 15
+    },
+    {
+      "id": "p10",
+      "name": "Dress",
+      "details": "Evening dress for women",
+      "brandId": "10",
+      "purchasePrice": 2500,
+      "salePrice": 3000,
+      "availableQuantity": 10
+    }
+  ],
+  "orders": [
+    {
+      "id": "o1",
+      "orderNo": "ORD001",
+      "productId": "p1",
+      "quantity": 2,
+      "salePrice": 1000,
+      "discount": 100,
+      "totalAmount": 1900
+    },
+    {
+      "id": "o2",
+      "orderNo": "ORD002",
+      "productId": "p2",
+      "quantity": 1,
+      "salePrice": 1500,
+      "discount": 150,
+      "totalAmount": 1350
+    },
+    {
+      "id": "o3",
+      "orderNo": "ORD003",
+      "productId": "p3",
+      "quantity": 3,
+      "salePrice": 1300,
+      "discount": 200,
+      "totalAmount": 3700
+    },
+    {
+      "id": "o4",
+      "orderNo": "ORD004",
+      "productId": "p4",
+      "quantity": 2,
+      "salePrice": 1100,
+      "discount": 100,
+      "totalAmount": 2100
+    },
+    {
+      "id": "o5",
+      "orderNo": "ORD005",
+      "productId": "p5",
+      "quantity": 5,
+      "salePrice": 700,
+      "discount": 150,
+      "totalAmount": 3350
+    },
+    {
+      "id": "o6",
+      "orderNo": "ORD006",
+      "productId": "p6",
+      "quantity": 1,
+      "salePrice": 1400,
+      "discount": 100,
+      "totalAmount": 1300
+    },
+    {
+      "id": "o7",
+      "orderNo": "ORD007",
+      "productId": "p7",
+      "quantity": 1,
+      "salePrice": 2500,
+      "discount": 200,
+      "totalAmount": 2300
+    },
+    {
+      "id": "o8",
+      "orderNo": "ORD008",
+      "productId": "p8",
+      "quantity": 2,
+      "salePrice": 900,
+      "discount": 100,
+      "totalAmount": 1700
+    },
+    {
+      "id": "o9",
+      "orderNo": "ORD009",
+      "productId": "p9",
+      "quantity": 1,
+      "salePrice": 1800,
+      "discount": 150,
+      "totalAmount": 1650
+    },
+    {
+      "id": "o10",
+      "orderNo": "ORD010",
+      "productId": "p10",
+      "quantity": 1,
+      "salePrice": 3000,
+      "discount": 200,
+      "totalAmount": 2800
+    }
+  ]
+}

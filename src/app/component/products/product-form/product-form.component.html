@@ -1,0 +1,61 @@
+<div class="flex justify-center ml-60 mt-2 bg-gray-50 p-4">
+    <form [formGroup]="productForm" (ngSubmit)="product ? updateProduct() : addProduct()"
+        class="shadow-md border bg-white p-8  w-full max-w-[600px]">
+
+        <h1 class="text-2xl font-semibold mb-6 text-center">
+            {{ product ? 'Update Product' : 'Add Product' }}
+        </h1>
+
+        <div class="grid grid-cols-2 gap-4">
+            <div>
+                <mat-label class="text-sm text-gray-600 mb-1">Product Name</mat-label>
+                <mat-form-field class="w-full !m-0" appearance="outline">
+                    <input type="text" matInput formControlName="name" />
+                </mat-form-field>
+            </div>
+
+            <div>
+                <mat-label class="text-sm text-gray-600 mb-1">Product Details</mat-label>
+                <mat-form-field class="w-full !m-0" appearance="outline">
+                    <input type="text" matInput formControlName="details" />
+                </mat-form-field>
+            </div>
+
+            <div>
+                <mat-label class="text-sm text-gray-600 mb-1">Brand Name</mat-label>
+                <mat-form-field class="w-full !m-0" appearance="outline">
+                    <mat-select formControlName="brandId">
+                        <mat-option *ngFor="let brand of brands" [value]="brand.id">{{ brand.name }}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div>
+                <mat-label class="text-sm text-gray-600 mb-1">Available Quantity</mat-label>
+                <mat-form-field class="w-full !m-0" appearance="outline">
+                    <input type="number" matInput formControlName="availableQuantity" />
+                </mat-form-field>
+            </div>
+
+            <div>
+                <mat-label class="text-sm text-gray-600 mb-1">Purchase Price</mat-label>
+                <mat-form-field class="w-full !m-0" appearance="outline">
+                    <input type="number" matInput formControlName="purchasePrice" />
+                </mat-form-field>
+            </div>
+
+            <div>
+                <mat-label class="text-sm text-gray-600 mb-1">Sale Price</mat-label>
+                <mat-form-field class="w-full !m-0" appearance="outline">
+                    <input type="number" matInput formControlName="salePrice" />
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-6">
+            <button mat-raised-button color="primary" class="px-6 py-2 text-lg min-w-[140px]" type="submit">
+                {{ product ? 'Update' : 'Add' }}
+            </button>
+        </div>
+    </form>
+</div>
